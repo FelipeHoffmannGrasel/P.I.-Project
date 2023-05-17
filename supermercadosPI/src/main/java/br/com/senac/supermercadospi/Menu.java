@@ -26,22 +26,22 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonCadastro1 = new javax.swing.JButton();
-        buttonLogin1 = new javax.swing.JButton();
+        buttonCadastro = new javax.swing.JButton();
+        buttonLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        buttonCadastro1.setText("Cadastro");
-        buttonCadastro1.addActionListener(new java.awt.event.ActionListener() {
+        buttonCadastro.setText("Register");
+        buttonCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonCadastro1ActionPerformed(evt);
+                buttonCadastroActionPerformed(evt);
             }
         });
 
-        buttonLogin1.setText("Login");
-        buttonLogin1.addActionListener(new java.awt.event.ActionListener() {
+        buttonLogin.setText("Login");
+        buttonLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonLogin1ActionPerformed(evt);
+                buttonLoginActionPerformed(evt);
             }
         });
 
@@ -50,34 +50,34 @@ public class Menu extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(152, 152, 152)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(buttonCadastro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(buttonLogin1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(171, Short.MAX_VALUE))
+                .addGap(65, 65, 65)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(buttonLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonCadastro))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addComponent(buttonCadastro1)
-                .addGap(73, 73, 73)
-                .addComponent(buttonLogin1)
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addGap(41, 41, 41)
+                .addComponent(buttonCadastro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(buttonLogin)
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void buttonLogin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLogin1ActionPerformed
-        dialogLogin1 dialog = new dialogLogin1(this, true);
-        dialog.setVisible(true);
-    }//GEN-LAST:event_buttonLogin1ActionPerformed
+    private void buttonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLoginActionPerformed
+        TelaLogin telaLogin = new TelaLogin();
+        telaLogin.setVisible(true);
+    }//GEN-LAST:event_buttonLoginActionPerformed
 
-    private void buttonCadastro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCadastro1ActionPerformed
-        dialogCadastro1 dialog = new dialogCadastro1(this, true);
-        dialog.setVisible(true);
-    }//GEN-LAST:event_buttonCadastro1ActionPerformed
+    private void buttonCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCadastroActionPerformed
+        TelaCadastro telaCadastro = new TelaCadastro();
+        telaCadastro.setVisible(true);
+    }//GEN-LAST:event_buttonCadastroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -115,7 +115,7 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonCadastro1;
-    private javax.swing.JButton buttonLogin1;
+    private javax.swing.JButton buttonCadastro;
+    private javax.swing.JButton buttonLogin;
     // End of variables declaration//GEN-END:variables
 }

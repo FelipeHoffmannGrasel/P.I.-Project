@@ -8,12 +8,12 @@ package br.com.senac.supermercadospi;
  *
  * @author Aluno TDS
  */
-public class TelaLogin extends javax.swing.JFrame {
+public class TelaCadastro extends javax.swing.JFrame {
 
     /**
-     * Creates new form TelaLogin
+     * Creates new form TelaCadastro
      */
-    public TelaLogin() {
+    public TelaCadastro() {
         initComponents();
     }
 
@@ -26,16 +26,25 @@ public class TelaLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        supermarket_radio_button = new javax.swing.JRadioButton();
-        login_button = new javax.swing.JButton();
-        login_label = new javax.swing.JLabel();
+        register_label = new javax.swing.JLabel();
         name_label = new javax.swing.JLabel();
         name_text_field = new javax.swing.JTextField();
         password_label = new javax.swing.JLabel();
         password_text_field = new javax.swing.JTextField();
         people_radio_button = new javax.swing.JRadioButton();
+        supermarket_radio_button = new javax.swing.JRadioButton();
+        register_button = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        register_label.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        register_label.setText("Register");
+
+        name_label.setText("Name or Email");
+
+        password_label.setText("Password");
+
+        people_radio_button.setText("People");
 
         supermarket_radio_button.setText("Supermarket");
         supermarket_radio_button.addActionListener(new java.awt.event.ActionListener() {
@@ -44,21 +53,12 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
 
-        login_button.setText("Login");
-        login_button.addActionListener(new java.awt.event.ActionListener() {
+        register_button.setText("Register");
+        register_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                login_buttonActionPerformed(evt);
+                register_buttonActionPerformed(evt);
             }
         });
-
-        login_label.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        login_label.setText("Login");
-
-        name_label.setText("Name or Email");
-
-        password_label.setText("Password");
-
-        people_radio_button.setText("People");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,17 +85,17 @@ public class TelaLogin extends javax.swing.JFrame {
                         .addComponent(supermarket_radio_button))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(54, 54, 54)
-                        .addComponent(login_button))
+                        .addComponent(register_button))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(69, 69, 69)
-                        .addComponent(login_label)))
+                        .addGap(61, 61, 61)
+                        .addComponent(register_label)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(login_label, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(register_label, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(name_label)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -109,7 +109,7 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(supermarket_radio_button)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(login_button)
+                .addComponent(register_button)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -120,21 +120,21 @@ public class TelaLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_supermarket_radio_buttonActionPerformed
 
-    private void login_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_buttonActionPerformed
+    private void register_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_buttonActionPerformed
         // TODO add your handling code here:
         TelaPrincipal telaPrincipal = new TelaPrincipal();
         telaPrincipal.setVisible(true);
-    }//GEN-LAST:event_login_buttonActionPerformed
+    }//GEN-LAST:event_register_buttonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton login_button;
-    private javax.swing.JLabel login_label;
     private javax.swing.JLabel name_label;
     private javax.swing.JTextField name_text_field;
     private javax.swing.JLabel password_label;
     private javax.swing.JTextField password_text_field;
     private javax.swing.JRadioButton people_radio_button;
+    private javax.swing.JButton register_button;
+    private javax.swing.JLabel register_label;
     private javax.swing.JRadioButton supermarket_radio_button;
     // End of variables declaration//GEN-END:variables
 }
